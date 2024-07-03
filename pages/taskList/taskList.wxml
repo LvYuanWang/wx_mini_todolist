@@ -1,0 +1,26 @@
+<view class="taskList-container">
+  <input type="text" class="setTodoList" placeholder="请输入新的待办事项..." model:value="{{taskContent}}" bindinput="setTodoList"/>
+  <view class="todolist">
+    <view class="btnContainer">
+      <button class="setTaskBtn" style="width: 60%;" bind:tap="addTaskBtn">创建一个任务</button>
+      <button class="setTaskBtn" style="width: 30%" bind:tap="share" open-type="share">分享</button>
+    </view>
+    <view class="taskList-content">
+      <view class="taskInfo">共 {{listArr.length}} 项任务</view>
+      <scroll-view class="taskList" scroll-y>
+        <view 
+          wx:if="{{listArr.length === 0}}"
+          style="text-align: center; color: #9e9a9a;"
+        >- 请添加任务 -</view>
+        <view wx:else>
+          <item 
+            wx:for="{{listArr}}" 
+            wx:key="this"
+            item="{{item}}"
+            bindfresh="fresh"
+          ></item>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

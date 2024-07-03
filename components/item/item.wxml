@@ -1,0 +1,12 @@
+<view class="item-container">
+  <view>
+    <checkbox 
+      checked="{{item.isComplete}}" 
+      bind:tap="tapCheckbox"
+    />
+    <text 
+      class="taskname {{item.isComplete?'finished':''}}"
+    >{{item.content}}</text>
+  </view>
+  <image src="/imgs/delete.png" mode="aspectFill" class="delete" bind:tap="deleteTask"/>
+</view>

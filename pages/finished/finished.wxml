@@ -1,0 +1,9 @@
+<view class="finished-container">
+  <view class="taskInfo">共 {{finishedList.length}} 项已完成任务</view>
+  <item 
+    wx:for="{{finishedList}}"
+    wx:key="this"
+    item="{{item}}"
+    bindfresh="fresh"
+  ></item>
+</view>

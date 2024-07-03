@@ -1,0 +1,26 @@
+.setTodoList {
+  padding: 40rpx;
+}
+.todolist {
+  border-top: 2rpx solid #B0AEB1;
+  border-bottom: 1rpx solid #B0AEB1;
+  height: 90vh;
+}
+.setTaskBtn {
+  background-color: #3F75CB;
+  color: white;
+  margin: 30rpx 0;
+  font-size: 40rpx;
+}
+.taskList-content {
+  padding: 0 30rpx;
+  font-size: 32rpx;
+}
+.taskList {
+  height: 750rpx;
+  position: relative;
+  top: 8vh;
+}
+.btnContainer {
+  display: flex;
+}

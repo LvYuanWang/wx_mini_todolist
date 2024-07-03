@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/taskList/taskList",
+    "pages/unfinished/unfinished",
+    "pages/finished/finished"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "待办事项",
+    "navigationBarBackgroundColor": "#3880EE"
+  },
+  "tabBar": {
+    "color": "#BABABA",
+    "selectedColor": "#6790E0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/taskList/taskList",
+        "text": "任务清单",
+        "iconPath": "imgs/todoUnsel.png",
+        "selectedIconPath": "imgs/todoSel.png"
+      },
+      {
+        "pagePath": "pages/unfinished/unfinished",
+        "text": "未完成",
+        "iconPath": "imgs/unfinishUnsel.png",
+        "selectedIconPath": "imgs/unfinishSel.png"
+      },
+      {
+        "pagePath": "pages/finished/finished",
+        "text": "已完成",
+        "iconPath": "imgs/finishUnsel.png",
+        "selectedIconPath": "imgs/finishSel.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

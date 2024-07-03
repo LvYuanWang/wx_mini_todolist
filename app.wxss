@@ -1,0 +1,4 @@
+.taskInfo {
+  color: #5b91ee;
+  font-weight: bold;
+}

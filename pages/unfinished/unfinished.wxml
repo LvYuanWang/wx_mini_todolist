@@ -1,0 +1,9 @@
+<view class="unfinished-container">
+  <view class="taskInfo">共 {{unfinishedList.length}} 项未完成任务</view>
+  <item 
+    wx:for="{{unfinishedList}}" 
+    wx:key="this"
+    item="{{item}}"
+    bindfresh="fresh"
+  ></item>
+</view>

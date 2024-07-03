@@ -1,0 +1,19 @@
+.item-container {
+  height: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #b0aeb1;
+  padding: 0 40rpx;
+}
+.taskname {
+  margin-left: 10rpx;
+}
+.finished {
+  text-decoration: line-through;
+  color: #cccccc;
+}
+.delete {
+  width: 40rpx;
+  height: 40rpx;
+}
